@@ -1,38 +1,45 @@
-// Mobile nav toggle
+// ===== Mobile nav toggle =====
 const burger = document.getElementById('burger');
 const navLinks = document.getElementById('navLinks');
+
 burger.addEventListener('click', () => {
   navLinks.classList.toggle('open');
 });
-navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
 
-// Scroll reveal
+navLinks.querySelectorAll('a').forEach((link) => {
+  link.addEventListener('click', () => navLinks.classList.remove('open'));
+});
+
+// ===== Scroll reveal =====
 const revealTargets = document.querySelectorAll(
-  '.hero__text, .hero__art, .about__side, .about__main, .proposition__inner, .service__text, .service__visual, .others__card, .others__visual, .friends__head, .friends__body'
+  '.hero__text, .hero__art, .about__side, .about__main, .proposition__inner, .service__text, .service__visual, .vid-grid, .others__card, .others__visual, .friends__head, .friends__body'
 );
-revealTargets.forEach(el => el.classList.add('reveal'));
 
-const io = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('in');
-      io.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.15 });
+revealTargets.forEach((el) => el.classList.add('reveal'));
 
-revealTargets.forEach(el => io.observe(el));
+const io = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in');
+        io.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.15 }
+);
 
-// Showreel button (placeholder interaction)
+revealTargets.forEach((el) => io.observe(el));
+
+// ===== Showreel button (placeholder interaction) =====
 const showreelBtn = document.getElementById('showreelBtn');
+
 if (showreelBtn) {
   showreelBtn.addEventListener('click', () => {
-    showreelBtn.querySelector('.showreel__play').textContent = '⏸';
+    const playIcon = showreelBtn.querySelector('.showreel__play');
+    playIcon.textContent = '⏸';
     setTimeout(() => {
-      showreelBtn.querySelector('.showreel__play').textContent = '▶';
+      playIcon.textContent = '▶';
     }, 1200);
   });
 }
-
-
-
