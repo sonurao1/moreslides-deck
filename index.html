@@ -11,14 +11,16 @@
 </head>
 <body>
 
+  <div class="scroll-progress" id="scrollProgress"></div>
+
   <!-- ===== NAV ===== -->
   <header class="nav" id="nav">
     <div class="wrap nav__inner">
-      <a href="#top" class="logo" aria-label="Moreslides home">
+      <a href="https://www.moreslides.com/" class="logo" aria-label="Moreslides home">
         <span class="logo__mark">
           <span class="logo__sq sq1"></span><span class="logo__sq sq2"></span><span class="logo__sq sq3"></span><span class="logo__sq sq4"></span>
         </span>
-        <span class="logo__word">MORE<span class="logo__word--thin">SLIDES</span></span>
+        <span class="logo__word"><img src="./Assets/logos/MORESLIDES.svg" alt="" srcset="" width="100px"></span></span>
       </a>
       <nav class="nav__links" id="navLinks">
         <a href="#about">About</a>
@@ -43,6 +45,7 @@
       <div class="hero__art" aria-hidden="true">
         <img src="./Assets/Page1.png" alt="Hero Art" class="hero__art-img">
       </div>
+      <div class="hero__scroll-cue"><span></span>Scroll</div>
     </div>
   </section>
 
@@ -69,10 +72,10 @@
         <p>Over the years, we have proudly extended our creative prowess to a global clientele, catering to the unique needs of startups and esteemed Fortune 500 brands alike. Our distinguished roster of clients features industry giants such as <strong>Visa, Abbott, Johnson &amp; Johnson, and Vodafone</strong>. This speaks to our commitment to delivering excellence and making a significant impact in the visual communication landscape. As we continue to grow, our dedication remains unwavering, and we look forward to the opportunity to elevate your brand through our innovative and tailored creative services.</p>
 
         <div class="stats">
-          <div class="stat"><span class="stat__num">300+</span><span class="stat__label">Clients</span></div>
-          <div class="stat"><span class="stat__num">12+</span><span class="stat__label">Years of experience</span></div>
-          <div class="stat"><span class="stat__num">30+</span><span class="stat__label">Team members</span></div>
-          <div class="stat"><span class="stat__num">3000+</span><span class="stat__label">Projects</span></div>
+          <div class="stat"><span class="stat__num" data-count="300">0+</span><span class="stat__label">Clients</span></div>
+          <div class="stat"><span class="stat__num" data-count="12">0+</span><span class="stat__label">Years of experience</span></div>
+          <div class="stat"><span class="stat__num" data-count="30">0+</span><span class="stat__label">Team members</span></div>
+          <div class="stat"><span class="stat__num" data-count="3000">0+</span><span class="stat__label">Projects</span></div>
         </div>
       </div>
     </div>
@@ -112,89 +115,40 @@
     <img src="./Assets/Page5.png" alt="">
   </section>
 
-  <!-- ===== SERVICE: TEMPLATES (blue) ===== -->
-  <section class="templates-section">
-    <div class="templates-wrapper">
-
-      <!-- Left -->
-      <div class="templates-content">
-        <h2>Templates</h2>
-        <p>
-          Templates are the backbone of efficient and consistent
-          communication. We specialize in creating templates that
-          not only align with your brand identity but also streamline
-          your content creation process. From presentations to
-          documents, our templates blend functionality with aesthetics,
-          providing a seamless framework for your messaging. Enhance
-          efficiency and maintain a polished brand image with our
-          tailored template designs.
-        </p>
-      </div>
-
-      <!-- Right -->
-      <div class="templates-image">
-        <img src="./Assets/Page6.png" alt="Templates">
-      </div>
-
-    </div>
-
-    <div class="template-tags">
-      <span>Master Slides</span>
-      <span>Custom layout</span>
-      <span>Brand alignment</span>
-      <span>Content placeholders</span>
-
-      <span>Document Templates</span>
-      <span>Editable Graphics</span>
-      <span>User guides</span>
-      <span>Color palette</span>
-    </div>
-  </section>
-
-  <!-- ===== SERVICE: PRESENTATIONS (dark) ===== -->
-  <section class="presentations">
-    <div class="content-row">
-      <div class="left">
-        <h1>Presentations</h1>
-        <p>
-          Experience the pinnacle of modern presentation design, where every slide is a
-          visual masterpiece. Elevate your content with top-notch graphical elements,
-          ensuring a polished and professional look. Our on-brand illustrations add a
-          touch of uniqueness, setting your presentations apart. Navigate data
-          effortlessly with dynamic charts that captivate and inform. We blend
-          creativity with functionality, offering a comprehensive approach to
-          presentation design that leaves a lasting impression.
-        </p>
-      </div>
-
-      <div class="collage">
-        <div class="collage-image-wrap">
-          <img src="./Assets/Page7.png" alt="Presentations collage">
+  <!-- ===== SERVICE: TEMPLATES (blue gradient) ===== -->
+  <section class="service service--blue-gradient">
+    <div class="wrap service__inner">
+      <div class="service__text">
+        <h3>Templates</h3>
+        <p>Templates are the backbone of efficient and consistent communication. We specialize in creating templates that not only align with your brand identity but also streamline your content creation process. From presentations to documents, our templates blend functionality with aesthetics, providing a seamless framework for your messaging. Enhance efficiency and maintain a polished brand image with our tailored template designs.</p>
+        <div class="pills pills--light">
+          <span class="pill pill--light">Master Slides</span><span class="pill pill--light">Custom Layout</span><span class="pill pill--light">Brand Alignment</span><span class="pill pill--light">Content Placeholders</span>
+          <span class="pill pill--light">Document Templates</span><span class="pill pill--light">Editable Graphics</span><span class="pill pill--light">User Guides</span><span class="pill pill--light">Color Palette</span>
         </div>
       </div>
     </div>
+    <img src="./Assets/Page6.png" alt="">
+  </section>
 
-    <div class="tags">
-      <div class="tag-row">
-        <span class="tag">Powerpoint</span>
-        <span class="tag">Prezi</span>
-        <span class="tag">Creative animation</span>
-        <span class="tag">Keynote</span>
-        <span class="tag">Google slides</span>
-      </div>
-      <div class="tag-row">
-        <span class="tag">Visual Storytelling</span>
-        <span class="tag">Sales presentation</span>
-        <span class="tag">Pitch Deck</span>
-        <span class="tag">Interactive displays</span>
+  <!-- ===== SERVICE: PRESENTATIONS (dark) ===== -->
+  <section class="service service--dark">
+    <div class="wrap service__inner">
+      <div class="service__text">
+        <h3>Presentations</h3>
+        <p>Experience the pinnacle of modern presentation design, where every slide is a visual masterpiece. Elevate your content with top-notch graphical elements, ensuring a polished and professional look. Our on-brand illustrations add a touch of uniqueness, setting your presentations apart. Navigate data effortlessly with dynamic charts that captivate and inform. We blend creativity with functionality, offering a comprehensive approach to presentation design that leaves a lasting impression.</p>
+        <div class="pills">
+          <span class="pill">Powerpoint</span><span class="pill">Prezi</span><span class="pill">Creative Animation</span><span class="pill">Keynote</span><span class="pill">Google Slides</span>
+          <span class="pill">Visual Storytelling</span><span class="pill">Sales Presentation</span><span class="pill">Pitch Deck</span><span class="pill">Interactive Displays</span>
+        </div>
       </div>
     </div>
+    <img src="./Assets/Page7.png" alt="">
   </section>
 
   <!-- ===== SERVICE: E-LEARNING (blue) ===== -->
   <section class="service service--blue">
-    <div class="wrap service__inner-elearning service__inner--rev-elearning">
-      <div class="elearning-service__text">
+    <div class="wrap service__inner">
+      <div class="service__text">
         <h3>e‑Learning</h3>
         <p>Immerse learners in captivating content through engaging interactions that foster active participation. Elevate education with gamification elements, turning lessons into exciting challenges for enhanced retention. Our simulations provide hands‑on experiences, bridging theory and practice seamlessly. Assessments are crafted to gauge comprehension effectively. Seamlessly integrate our eLearning solutions into modern Learning Management Systems (LMS), ensuring a user‑friendly and streamlined experience.</p>
         <div class="pills pills--light">
@@ -202,11 +156,8 @@
           <span class="pill pill--light">Interactive</span><span class="pill pill--light">Rise 360</span><span class="pill pill--light">3D Animation</span><span class="pill pill--light">Assessment</span><span class="pill pill--light">Articulate Storyline</span>
         </div>
       </div>
-
-      <div class="elearning-image-container">
-        <img src="./Assets/Page8.png" alt="">
-      </div>
     </div>
+    <img src="./Assets/Page8.png" alt="">
   </section>
 
   <!-- ===== SERVICE: MOTION GRAPHICS (dark) ===== -->
@@ -222,18 +173,14 @@
       </div>
       <div class="motion-images">
         <div class="image-grid">
-          <div class="image-box"></div>
-          <div class="image-box"></div>
-          <div class="image-box"></div>
-          <div class="image-box"></div>
-          <div class="image-box"></div>
-          <div class="image-box"></div>
-          <div class="image-box"></div>
-          <div class="image-box"></div>
-          <div class="image-box"></div>
-          <div class="image-box"></div>
-          <div class="image-box"></div>
-          <div class="image-box"></div>
+          <div class="image-box" id="image1"></div>
+          <div class="image-box" id="image2"></div>
+          <div class="image-box" id="image3"></div>
+          <div class="image-box" id="image4"></div>
+          <div class="image-box" id="image5"></div>
+          <div class="image-box" id="image6"></div>
+          <div class="image-box" id="image7"></div>
+          <div class="image-box" id="image8"></div>
         </div>
       </div>
     </div>
@@ -251,9 +198,7 @@
         </div>
       </div>
     </div>
-          <div class="elearning-image-container">
-        <img src="./Assets/Page10.png" alt="">
-      </div>
+    <img src="./Assets/Page10.png" alt="">
   </section>
 
   <!-- ===== OTHERS ===== -->
@@ -289,20 +234,20 @@
       <hr class="rule">
       <div class="friends__body">
         <p class="friends__note">We are not looking for clients — we are looking for like‑minded individuals, who are willing to take on challenges and create something truly unique and meaningful, together.</p>
-        <div class="logo-grid">
-          <span class="logo"><img src="./Assets/logos/hsbc.png" alt=""></span>
-          <span class="logo"><img src="./Assets/logos/ikea.png" alt=""></span>
-          <span class="logo"><img src="./Assets/logos/chanel.png" alt=""></span>
-          <span class="logo"><img src="./Assets/logos/wipro.png" alt=""></span>
-          <span class="logo"><img src="./Assets/logos/abbott.png" alt=""></span>
-          <span class="logo"><img src="./Assets/logos/p&g.png" alt=""></span>
-          <span class="logo"><img src="./Assets/logos/johnson_and_johnson.png" alt=""></span>
-          <span class="logo"><img src="./Assets/logos/visa.png" alt=""></span>
-          <span class="logo"><img src="./Assets/logos/lenskart.png" alt=""></span>
-          <span class="logo"><img src="./Assets/logos/atlas_copco.png" alt=""></span>
-          <span class="logo"><img src="./Assets/logos/metlife.png" alt=""></span>
-          <span class="logo"><img src="./Assets/logos/microsoft.png" alt=""></span>
-          <span class="logo"><img src="./Assets/logos/vodafone.png" alt=""></span>
+        <div class="clients-grid">
+          <div class="client-card"><img src="./Assets/logos/hsbc.png" alt="HSBC" loading="lazy"></div>
+          <div class="client-card"><img src="./Assets/logos/ikea.png" alt="IKEA" loading="lazy"></div>
+          <div class="client-card"><img src="./Assets/logos/chanel.png" alt="Chanel" loading="lazy"></div>
+          <div class="client-card"><img src="./Assets/logos/wipro.png" alt="Wipro" loading="lazy"></div>
+          <div class="client-card"><img src="./Assets/logos/abbott.png" alt="Abbott" loading="lazy"></div>
+          <div class="client-card"><img src="./Assets/logos/p&g.png" alt="P&amp;G" loading="lazy"></div>
+          <div class="client-card"><img src="./Assets/logos/johnson_and_johnson.png" alt="Johnson &amp; Johnson" loading="lazy"></div>
+          <div class="client-card"><img src="./Assets/logos/visa.png" alt="Visa" loading="lazy"></div>
+          <div class="client-card"><img src="./Assets/logos/lenskart.png" alt="Lenskart" loading="lazy"></div>
+          <div class="client-card"><img src="./Assets/logos/atlas_copco.png" alt="Atlas Copco" loading="lazy"></div>
+          <div class="client-card"><img src="./Assets/logos/metlife.png" alt="MetLife" loading="lazy"></div>
+          <div class="client-card"><img src="./Assets/logos/microsoft.png" alt="Microsoft" loading="lazy"></div>
+          <div class="client-card"><img src="./Assets/logos/vodafone.png" alt="Vodafone" loading="lazy"></div>
         </div>
       </div>
     </div>
@@ -332,6 +277,8 @@
       </div>
     </div>
   </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
 
   <script src="script.js"></script>
 </body>
