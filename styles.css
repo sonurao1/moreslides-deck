@@ -131,7 +131,7 @@ ul, ol {
   background: linear-gradient(115deg, transparent 30%, rgba(255, 255, 255, .5) 48%, transparent 66%);
   transform: translateX(-140%);
   transition: transform .7s var(--ease-out);
-  /* pointer-events: none; */
+  pointer-events: none;
   mix-blend-mode: overlay;
 }
 .btn:hover::before { transform: translateX(140%); }
